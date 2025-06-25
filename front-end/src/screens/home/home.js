@@ -41,32 +41,9 @@ export default function Home({ navigation }) {
         <Text style={styles.cardAmount}>R$ 1.460,00</Text>
       </View>
 
-      <BarChart
-        data={data}
-        width={420}
-        height={220}
-        fromZero={true}
-        withInnerLines={false}
-        showValuesOnTopOfBars={true}
-        chartConfig={{
-          backgroundColor: '#FFF',
-          backgroundGradientFrom: '#FFF',
-          backgroundGradientTo: '#FFF',
-          decimalPlaces: 0,
-          color: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
-          labelColor: () => '#000',
-          style: {
-            borderRadius: 16,
-          },
-          propsForDots: {
-            r: '6',
-            strokeWidth: '2',
-          },
-        }}
-        style={{ marginVertical: 8, borderRadius: 16 }}
-      />
+      
 
-      {/* Barra inferior com dois botões: Sobre e Início */}
+      
       <View style={styles.bottomBar}>
         <TouchableOpacity onPress={() => navigation.navigate('Sobre')} style={styles.bottomButton}>
           <Text style={styles.bottomBarText}>Sobre</Text>

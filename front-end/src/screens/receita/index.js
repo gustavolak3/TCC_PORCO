@@ -59,7 +59,7 @@ export default function Receita() {
     <View style={styles.container}>
       <TextInput
         style={[styles.input, styles.textArea]}
-        placeholder="Descrição (6 linhas)"
+        placeholder="Descrição da Receita"
         value={descricao}
         onChangeText={setDescricao}
         multiline

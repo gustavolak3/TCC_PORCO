@@ -59,7 +59,7 @@ export default function Despesa() {
     <View style={styles.container}>
       <TextInput
         style={[styles.input, styles.textArea]}
-        placeholder="Descrição (6 linhas)"
+        placeholder="Descrição da Despesa"
         value={descricao}
         onChangeText={setDescricao}
         multiline
