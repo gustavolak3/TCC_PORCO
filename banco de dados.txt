@@ -1,0 +1,32 @@
+
+create database poupaporco;
+USE poupaporco;
+
+create table usuario(
+id_usuario int auto_increment primary key,
+nome varchar (100),
+senha varchar (100)
+);
+
+create table transacao (
+id_usuario int,
+id int primary key auto_increment,
+tipo varchar(20),
+descricao varchar(200),
+valor int,
+data date,
+ FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario)
+
+);
+create  table faq(
+faqs varchar(1000)
+);
+
+
+insert into usuario (nome,senha)
+values ('gustavo','196');
+
+select * from usuario;
+select * from  faq;
+select * from transacao;
+
